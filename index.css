@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 18rem;
+    background: linear-gradient(135deg,#20002c,#cbb4d4);
+
+}
+
+.Bg-container{
+    max-width: 100rem;
+    width: 100%;
+    padding: 1.5rem 2rem 2rem 2rem;
+    background: #ffffff;
+    border-radius: 1rem;
+}
+
+.Bg-container .title-container{
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.Bg-container .title-container::before{
+    content: '';
+    height: 0.2rem;
+    width: 2rem;
+    position: absolute;
+    background: linear-gradient(135deg,#20002c,#cbb4d4);
+    bottom: 0;
+    left: 0;
+}
+
+.Bg-container form .Detail-box{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    margin: 1rem 0 2rem 0;
+}
+
+.input-box{
+    width: calc(100% /2 - 1.25rem);
+    margin: 1.25rem 0rem 0.4rem 0rem;
+    
+}
+
+.input-box input{
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    border: 0.123rem solid #ccc;
+    border-bottom-width: 0.125rem;
+    transition: all 0.3s ease;
+}
+
+input::placeholder{
+    color: #ccc;
+    opacity: 0.8;
+    font-weight: thin;
+}
+
+.Detail-box .input-box .categ{
+    display: block;
+    font-weight: 400;
+    padding-left: 0.29rem;
+    margin: 0rem;
+       
+}
+
+
+.input-box input:valid,
+.input-box input:focus{
+    border-color: #cbb4d4;
+}
+
+.Gender-Detail{
+    font-weight: 400;
+    font-size: 1rem;
+    width: 80%;
+    margin:2rem 0rem 0.2rem 0rem;
+}  
+
+.gendertitle{
+    font-weight: 500;
+}
+
+
+.gendertype{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1rem;
+    
+}
+
+
+.gendertype label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.dot{
+    width: 1rem;
+    height: 1rem;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    border: 0.312rem solid transparent;
+    transition: all 0.3s ease;
+}
+
+ #dot-1:checked ~ .gendertype label .one,
+ #dot-2:checked ~ .gendertype label .two,
+ #dot-3:checked ~ .gendertype label .three{
+        border-color: #d9d9d9;
+        background: #b589c7;
+} 
+
+input[type=radio]{
+    display: none;
+}
+
+.btn{
+    
+    position: relative;
+    bottom: -1rem;
+    width: 60%;
+    margin: auto;
+    border-radius: 1rem;
+     box-shadow:  7px 7px 15px #ffdde1;
+     background:  #ee9ca7;      
+    /* background: linear-gradient(135deg,#ee9ca7,#ffdde1); */
+
+}
+
+.btn .btn1{
+    align-content: center;
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 0.8rem; 
+    
+}
+
+.btn1:hover{
+    border-radius: 1rem;
+    background: linear-gradient(-135deg,#ee9ca7,#ffdde1);
+
+}
+
+@media (max-width: 768px){
+
+    body{
+        
+        width: 100%;
+        height: auto;
+        padding: 5rem;
+    }
+
+    .Bg-container{
+        max-width: 100%;
+        width: 100%;
+        padding: 1rem;
+        
+        
+    }
+    .btn{
+        width: 80%;
+    }
+
+    .input-box{
+        
+        width: 100%;
+
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+
+
+    
+    body{
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    
+    .input-box{
+
+        width: 100%;
+
+    }
+
+
+
+}
+
+
+
+
+
